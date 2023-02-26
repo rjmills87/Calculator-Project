@@ -52,68 +52,79 @@ const divide = (num1, num2) => {
 };
 console.log(divide(7, 2));
 
-const operate = (operator, num1, num2) => {};
-
 // Number Button Event Listeners
 
-oneBtn.addEventListener("click", function () {
-  calcDisplay.textContent = 1;
-});
+let numberButtons = () => {
+  oneBtn.addEventListener("click", function () {
+    calcDisplay.textContent = 1;
+  });
 
-twoBtn.addEventListener("click", function () {
-  calcDisplay.textContent = 2;
-});
+  twoBtn.addEventListener("click", function () {
+    calcDisplay.textContent = 2;
+  });
 
-threeBtn.addEventListener("click", function () {
-  calcDisplay.textContent = 3;
-});
+  threeBtn.addEventListener("click", function () {
+    calcDisplay.textContent = 3;
+  });
 
-fourBtn.addEventListener("click", function () {
-  calcDisplay.textContent = 4;
-});
+  fourBtn.addEventListener("click", function () {
+    calcDisplay.textContent = 4;
+  });
 
-fiveBtn.addEventListener("click", function () {
-  calcDisplay.textContent = 5;
-});
+  fiveBtn.addEventListener("click", function () {
+    calcDisplay.textContent = 5;
+  });
 
-sixBtn.addEventListener("click", function () {
-  calcDisplay.textContent = 6;
-});
+  sixBtn.addEventListener("click", function () {
+    calcDisplay.textContent = 6;
+  });
 
-sevenBtn.addEventListener("click", function () {
-  calcDisplay.textContent = 7;
-});
+  sevenBtn.addEventListener("click", function () {
+    calcDisplay.textContent = 7;
+  });
 
-eightBtn.addEventListener("click", function () {
-  calcDisplay.textContent = 8;
-});
+  eightBtn.addEventListener("click", function () {
+    calcDisplay.textContent = 8;
+  });
 
-nineBtn.addEventListener("click", function () {
-  calcDisplay.textContent = 9;
-});
+  nineBtn.addEventListener("click", function () {
+    calcDisplay.textContent = 9;
+  });
 
-zeroBtn.addEventListener("click", function () {
-  calcDisplay.textContent = 0;
-});
+  zeroBtn.addEventListener("click", function () {
+    calcDisplay.textContent = 0;
+  });
+};
+numberButtons();
 
 //Operator Button Event Listeners
 
-addBtn.addEventListener("click", function () {
-  add();
-});
+let operatorButtons = () => {
+  addBtn.addEventListener("click", function () {
+    add();
+  });
 
-subtractBtn.addEventListener("click", function () {
-  subtract();
-});
+  subtractBtn.addEventListener("click", function () {
+    subtract();
+  });
 
-multiplyBtn.addEventListener("click", function () {
-  multiply();
-});
+  multiplyBtn.addEventListener("click", function () {
+    multiply();
+  });
 
-divideBtn.addEventListener("click", function () {
-  divide();
-});
+  divideBtn.addEventListener("click", function () {
+    divide();
+  });
 
-equalsBtn.addEventListener("click", function () {
-  operate();
+  equalsBtn.addEventListener("click", function () {
+    operate();
+  });
+};
+operatorButtons();
+
+const operate = (operator, num1, num2) => {};
+operate(operatorButtons(), numberButtons(), numberButtons());
+
+clearBtn.addEventListener("click", () => {
+  //Create init function later
 });
