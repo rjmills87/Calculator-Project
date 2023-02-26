@@ -22,44 +22,70 @@ const divideBtn = document.querySelector("#btn-divide");
 const multiplyBtn = document.querySelector("#btn-multiply");
 const equalsBtn = document.querySelector("#btn-equals");
 
+//Display Selector
+
+const calcDisplay = document.querySelector(".calc-display");
+
 //Event Listeners
 
 oneBtn.addEventListener("click", function () {
-  console.log(1);
+  calcDisplay.textContent = 1;
 });
 
 twoBtn.addEventListener("click", function () {
-  console.log(2);
+  calcDisplay.textContent = 2;
 });
 
 threeBtn.addEventListener("click", function () {
-  console.log(3);
+  calcDisplay.textContent = 3;
 });
 
 fourBtn.addEventListener("click", function () {
-  console.log(4);
+  calcDisplay.textContent = 4;
 });
 
 fiveBtn.addEventListener("click", function () {
-  console.log(5);
+  calcDisplay.textContent = 5;
 });
 
 sixBtn.addEventListener("click", function () {
-  console.log(6);
+  calcDisplay.textContent = 6;
 });
 
 sevenBtn.addEventListener("click", function () {
-  console.log(7);
+  calcDisplay.textContent = 7;
 });
 
 eightBtn.addEventListener("click", function () {
-  console.log(8);
+  calcDisplay.textContent = 8;
 });
 
 nineBtn.addEventListener("click", function () {
-  console.log(9);
+  calcDisplay.textContent = 9;
 });
 
 zeroBtn.addEventListener("click", function () {
-  console.log(0);
+  calcDisplay.textContent = 0;
 });
+
+const add = (num1, num2) => {
+  let sum = num1 + num2;
+  return sum;
+};
+
+const subtract = (num1, num2) => {
+  let sum = num1 - num2;
+  return sum;
+};
+
+const multiply = (num1, num2) => {
+  let sum = num1 * num2;
+  return sum;
+};
+
+const divide = (num1, num2) => {
+  let sum = num1 / num2;
+  return sum;
+};
+
+const operate = (op, num1, num2) => {};
