@@ -68,24 +68,30 @@ zeroBtn.addEventListener("click", function () {
   calcDisplay.textContent = 0;
 });
 
+//Math Operator Functions
+
 const add = (num1, num2) => {
   let sum = num1 + num2;
   return sum;
 };
+console.log(add(7, 2));
 
 const subtract = (num1, num2) => {
   let sum = num1 - num2;
   return sum;
 };
+console.log(subtract(7, 2));
 
 const multiply = (num1, num2) => {
   let sum = num1 * num2;
   return sum;
 };
+console.log(multiply(7, 2));
 
 const divide = (num1, num2) => {
   let sum = num1 / num2;
   return sum;
 };
+console.log(divide(7, 2));
 
 const operate = (op, num1, num2) => {};
