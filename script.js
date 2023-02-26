@@ -26,7 +26,35 @@ const equalsBtn = document.querySelector("#btn-equals");
 
 const calcDisplay = document.querySelector(".calc-display");
 
-//Event Listeners
+//Math Operator Functions
+
+const add = (num1, num2) => {
+  let sum = num1 + num2;
+  return sum;
+};
+console.log(add(7, 2));
+
+const subtract = (num1, num2) => {
+  let sum = num1 - num2;
+  return sum;
+};
+console.log(subtract(7, 2));
+
+const multiply = (num1, num2) => {
+  let sum = num1 * num2;
+  return sum;
+};
+console.log(multiply(7, 2));
+
+const divide = (num1, num2) => {
+  let sum = num1 / num2;
+  return sum;
+};
+console.log(divide(7, 2));
+
+const operate = (operator, num1, num2) => {};
+
+// Number Button Event Listeners
 
 oneBtn.addEventListener("click", function () {
   calcDisplay.textContent = 1;
@@ -68,30 +96,24 @@ zeroBtn.addEventListener("click", function () {
   calcDisplay.textContent = 0;
 });
 
-//Math Operator Functions
+//Operator Button Event Listeners
 
-const add = (num1, num2) => {
-  let sum = num1 + num2;
-  return sum;
-};
-console.log(add(7, 2));
+addBtn.addEventListener("click", function () {
+  add();
+});
 
-const subtract = (num1, num2) => {
-  let sum = num1 - num2;
-  return sum;
-};
-console.log(subtract(7, 2));
+subtractBtn.addEventListener("click", function () {
+  subtract();
+});
 
-const multiply = (num1, num2) => {
-  let sum = num1 * num2;
-  return sum;
-};
-console.log(multiply(7, 2));
+multiplyBtn.addEventListener("click", function () {
+  multiply();
+});
 
-const divide = (num1, num2) => {
-  let sum = num1 / num2;
-  return sum;
-};
-console.log(divide(7, 2));
+divideBtn.addEventListener("click", function () {
+  divide();
+});
 
-const operate = (op, num1, num2) => {};
+equalsBtn.addEventListener("click", function () {
+  operate();
+});
