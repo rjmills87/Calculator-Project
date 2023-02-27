@@ -1,6 +1,7 @@
 "use strict";
 
-let displayValue = 0;
+let num1;
+let num2;
 
 //Button Selectors
 
@@ -58,43 +59,63 @@ console.log(divide(7, 2));
 
 let numberButtons = () => {
   oneBtn.addEventListener("click", function () {
-    calcDisplay.value += 1;
-  });
+    calcDisplay.textContent += 1;
+    num1 = Number(calcDisplay.textContent);
 
+    console.log(num1);
+  });
   twoBtn.addEventListener("click", function () {
-    calcDisplay.value += 2;
+    calcDisplay.textContent += 2;
+    num1 = Number(calcDisplay.textContent);
+    console.log(num1);
   });
 
   threeBtn.addEventListener("click", function () {
-    calcDisplay.value += 3;
+    calcDisplay.textContent += 3;
+    num1 = Number(calcDisplay.textContent);
+
+    console.log(num1);
   });
 
   fourBtn.addEventListener("click", function () {
-    calcDisplay.value += 4;
+    calcDisplay.textContent += 4;
+    num1 = Number(calcDisplay.textContent);
+
+    console.log(num1);
   });
 
   fiveBtn.addEventListener("click", function () {
-    calcDisplay.value += 5;
+    calcDisplay.textContent += 5;
+    num1 = Number(calcDisplay.textContent);
+
+    console.log(num1);
   });
 
   sixBtn.addEventListener("click", function () {
-    calcDisplay.value += 6;
+    calcDisplay.textContent += 6;
+    num1 = Number(calcDisplay.textContent);
+
+    console.log(num1);
   });
 
   sevenBtn.addEventListener("click", function () {
-    calcDisplay.value += 7;
+    calcDisplay.textContent += 7;
+    num1 = Number(calcDisplay.textContent);
   });
 
   eightBtn.addEventListener("click", function () {
-    calcDisplay.value += 8;
+    calcDisplay.textContent += 8;
+    num1 = Number(calcDisplay.textContent);
   });
 
   nineBtn.addEventListener("click", function () {
-    calcDisplay.value += 9;
+    calcDisplay.textContent += 9;
+    num1 = Number(calcDisplay.textContent);
   });
 
   zeroBtn.addEventListener("click", function () {
-    calcDisplay.value += 0;
+    calcDisplay.textContent += 0;
+    num1 = Number(calcDisplay.textContent);
   });
 };
 numberButtons();
@@ -102,30 +123,24 @@ numberButtons();
 //Operator Button Event Listeners
 
 let operatorButtons = () => {
-  addBtn.addEventListener("click", function () {
-    add();
-  });
+  addBtn.addEventListener("click", function () {});
 
-  subtractBtn.addEventListener("click", function () {
-    subtract();
-  });
+  subtractBtn.addEventListener("click", function () {});
 
-  multiplyBtn.addEventListener("click", function () {
-    multiply();
-  });
+  multiplyBtn.addEventListener("click", function () {});
 
-  divideBtn.addEventListener("click", function () {
-    divide();
-  });
+  divideBtn.addEventListener("click", function () {});
 
   equalsBtn.addEventListener("click", function () {
     operate();
   });
 };
+
 operatorButtons();
 
 const operate = (operator, num1, num2) => {};
 
 clearBtn.addEventListener("click", () => {
-  //Create init function later
+  calcDisplay.textContent = "";
+  num1 = 0;
 });
