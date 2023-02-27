@@ -23,14 +23,13 @@ body {
   color: #fff;
   background-color: darkgrey;
   box-shadow: 3px 3px black;
-
   font-size: 2rem;
   height: 60px;
   width: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 5px;
+  border-radius: 50px;
 }
 
 .btn:hover {
@@ -80,4 +79,9 @@ body {
 #btn-divide {
   background-color: orange;
   box-shadow: 3px 3px black;
+}
+
+#clear-btn,
+#delete-btn {
+  background-color: #ff0200;
 }
