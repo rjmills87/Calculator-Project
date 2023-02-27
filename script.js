@@ -2,6 +2,7 @@
 
 let num1 = null;
 let num2 = null;
+let operator = null;
 
 //Button Selectors
 
@@ -32,23 +33,19 @@ const calcDisplay = document.querySelector(".calc-display");
 //Math Operator Functions
 
 const add = (num1, num2) => {
-  let sum = num1 + num2;
-  return sum;
+  return num1 + num2;
 };
 
 const subtract = (num1, num2) => {
-  let sum = num1 - num2;
-  return sum;
+  return num1 - num2;
 };
 
 const multiply = (num1, num2) => {
-  let sum = num1 * num2;
-  return sum;
+  return num1 * num2;
 };
 
 const divide = (num1, num2) => {
-  let sum = num1 / num2;
-  return sum;
+  return num1 / num2;
 };
 
 // Number Button Event Listeners
@@ -101,18 +98,22 @@ numberButtons();
 let operatorButtons = () => {
   addBtn.addEventListener("click", function () {
     num1 = Number(calcDisplay.textContent);
+    operator = add;
   });
 
   subtractBtn.addEventListener("click", function () {
     num1 = Number(calcDisplay.textContent);
+    operator = subtract;
   });
 
   multiplyBtn.addEventListener("click", function () {
     num1 = Number(calcDisplay.textContent);
+    operator = multiply;
   });
 
   divideBtn.addEventListener("click", function () {
     num1 = Number(calcDisplay.textContent);
+    operator = divide;
   });
 
   equalsBtn.addEventListener("click", function () {

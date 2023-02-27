@@ -15,13 +15,15 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-color: #3b2ffa;
+  background-color: #004ccc;
   border-radius: 10px;
 }
 
 .btn {
   color: #fff;
-  background-color: black;
+  background-color: darkgrey;
+  box-shadow: 3px 3px black;
+
   font-size: 2rem;
   height: 60px;
   width: 60px;
@@ -45,11 +47,10 @@ body {
   background-color: #fff;
   display: flex;
   justify-content: flex-end;
-  height: 80px;
+  height: 90px;
   margin: 0px 30px;
-  font-size: 3rem;
+  font-size: 4.5rem;
 }
-
 .btn-row-one {
   margin-bottom: 10px;
 }
@@ -78,5 +79,5 @@ body {
 #btn-decimal,
 #btn-divide {
   background-color: orange;
-  box-shadow: 2px 2px black;
+  box-shadow: 3px 3px black;
 }
