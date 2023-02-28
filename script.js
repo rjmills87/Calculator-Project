@@ -52,13 +52,13 @@ const divide = (num1, num2) => {
 
 const operate = (operator, num1, num2) => {
   switch (operator) {
-    case add:
+    case "+":
       return add(num1, num2);
-    case subtract:
+    case "-":
       return subtract(num1, num2);
-    case multiply:
+    case "*":
       return multiply(num1, num2);
-    case divide:
+    case "/":
       return divide(num1, num2);
     default:
       return NaN;
@@ -117,29 +117,47 @@ let operatorButtons = () => {
   addBtn.addEventListener("click", function () {
     num1 = Number(displayLineBottom.textContent);
     operator = add;
+    displayLineTop.textContent = `${num1} + `;
+    displayLineBottom.textContent = "";
   });
 
   subtractBtn.addEventListener("click", function () {
     num1 = Number(displayLineBottom.textContent);
     operator = subtract;
+    displayLineTop.textContent = `${num1} − `;
+    displayLineBottom.textContent = "";
   });
 
   multiplyBtn.addEventListener("click", function () {
     num1 = Number(displayLineBottom.textContent);
     operator = multiply;
+    displayLineTop.textContent = `${num1} ᳵ `;
+    displayLineBottom.textContent = "";
   });
 
   divideBtn.addEventListener("click", function () {
     num1 = Number(displayLineBottom.textContent);
     operator = divide;
+    displayLineTop.textContent = `${num1} ÷ `;
+    displayLineBottom.textContent = "";
   });
 
   equalsBtn.addEventListener("click", function () {
-    operate();
+    num2 = Number(displayLineBottom.textContent);
+    displayLineTop.textContent = "";
+    displayLineBottom.textContent = num1;
+    operate(operator, num1, num2);
   });
 };
-
 operatorButtons();
+
+const getResult = (operator, num1, num2) => {
+  displayLineTop.textContent = "";
+  displayLineBottom.textContent = operator(num1, num2);
+  num1 = null;
+  num2 = null;
+  operator = null;
+};
 
 clearBtn.addEventListener("click", () => {
   displayLineTop.textContent = "";
