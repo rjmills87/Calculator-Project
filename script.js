@@ -126,6 +126,6 @@ operatorButtons();
 const operate = (operator, num1, num2) => {};
 
 clearBtn.addEventListener("click", () => {
-  calcDisplay.textContent = "0";
+  calcDisplay.textContent = "";
   num1 = null;
 });
