@@ -44,11 +44,10 @@ button {
 .calc-display {
   border: solid black 2px;
   background-color: #fff;
-  display: flex;
-  justify-content: flex-end;
   height: 90px;
   margin: 0px 30px;
   font-size: 4.5rem;
+  text-align: right;
 }
 .btn-row-one {
   margin-bottom: 10px;

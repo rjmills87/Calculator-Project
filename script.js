@@ -52,43 +52,43 @@ const divide = (num1, num2) => {
 
 let numberButtons = () => {
   oneBtn.addEventListener("click", function () {
-    calcDisplay.textContent += 1;
+    calcDisplay.value += 1;
   });
 
   twoBtn.addEventListener("click", function () {
-    calcDisplay.textContent += 2;
+    calcDisplay.value += 2;
   });
 
   threeBtn.addEventListener("click", function () {
-    calcDisplay.textContent += 3;
+    calcDisplay.value += 3;
   });
 
   fourBtn.addEventListener("click", function () {
-    calcDisplay.textContent += 4;
+    calcDisplay.value += 4;
   });
 
   fiveBtn.addEventListener("click", function () {
-    calcDisplay.textContent += 5;
+    calcDisplay.value += 5;
   });
 
   sixBtn.addEventListener("click", function () {
-    calcDisplay.textContent += 6;
+    calcDisplay.value += 6;
   });
 
   sevenBtn.addEventListener("click", function () {
-    calcDisplay.textContent += 7;
+    calcDisplay.value += 7;
   });
 
   eightBtn.addEventListener("click", function () {
-    calcDisplay.textContent += 8;
+    calcDisplay.value += 8;
   });
 
   nineBtn.addEventListener("click", function () {
-    calcDisplay.textContent += 9;
+    calcDisplay.value += 9;
   });
 
   zeroBtn.addEventListener("click", function () {
-    calcDisplay.textContent += 0;
+    calcDisplay.value += 0;
   });
 };
 numberButtons();
@@ -97,22 +97,22 @@ numberButtons();
 
 let operatorButtons = () => {
   addBtn.addEventListener("click", function () {
-    num1 = Number(calcDisplay.textContent);
+    num1 = Number(calcDisplay.value);
     operator = add;
   });
 
   subtractBtn.addEventListener("click", function () {
-    num1 = Number(calcDisplay.textContent);
+    num1 = Number(calcDisplay.value);
     operator = subtract;
   });
 
   multiplyBtn.addEventListener("click", function () {
-    num1 = Number(calcDisplay.textContent);
+    num1 = Number(calcDisplay.value);
     operator = multiply;
   });
 
   divideBtn.addEventListener("click", function () {
-    num1 = Number(calcDisplay.textContent);
+    num1 = Number(calcDisplay.value);
     operator = divide;
   });
 
@@ -126,6 +126,6 @@ operatorButtons();
 const operate = (operator, num1, num2) => {};
 
 clearBtn.addEventListener("click", () => {
-  calcDisplay.textContent = "";
+  calcDisplay.value = "";
   num1 = null;
 });
