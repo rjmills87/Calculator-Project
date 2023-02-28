@@ -46,9 +46,19 @@ button {
   background-color: #fff;
   height: 90px;
   margin: 0px 30px;
-  font-size: 4.5rem;
   text-align: right;
 }
+
+#display-line-top,
+#display-line-bottom {
+  height: 45px;
+  font-size: 2rem;
+}
+
+#display-line-top {
+  border: solid crimson;
+}
+
 .btn-row-one {
   margin-bottom: 10px;
 }
