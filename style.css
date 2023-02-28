@@ -6,7 +6,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Glory", sans-serif;
-  background-color: lemonchiffon;
+  background-color: whitesmoke;
 }
 
 .calc-body {
@@ -17,12 +17,12 @@ body {
   justify-content: space-around;
   background-color: #004ccc;
   border-radius: 10px;
+  border: black solid 5px;
 }
 
-.btn {
+button {
   color: #fff;
   background-color: darkgrey;
-  box-shadow: 3px 3px black;
   font-size: 2rem;
   height: 60px;
   width: 60px;
@@ -42,7 +42,7 @@ body {
 }
 
 .calc-display {
-  border: solid gray;
+  border: solid black 2px;
   background-color: #fff;
   display: flex;
   justify-content: flex-end;
@@ -78,7 +78,6 @@ body {
 #btn-decimal,
 #btn-divide {
   background-color: orange;
-  box-shadow: 3px 3px black;
 }
 
 #clear-btn,
