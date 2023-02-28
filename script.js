@@ -16,6 +16,7 @@ const sevenBtn = document.querySelector("#btn-seven");
 const eightBtn = document.querySelector("#btn-eight");
 const nineBtn = document.querySelector("#btn-nine");
 const zeroBtn = document.querySelector("#btn-zero");
+const decimalBtn = document.querySelector("#btn-decimal");
 
 const clearBtn = document.querySelector("#clear-btn");
 const deleteBtn = document.querySelector("#delete-btn");
@@ -70,7 +71,6 @@ const operate = (operator, num1, num2) => {
 let numberButtons = () => {
   oneBtn.addEventListener("click", function () {
     displayLineBottom.textContent += "1";
-    console.log(oneBtn);
   });
 
   twoBtn.addEventListener("click", function () {
@@ -107,6 +107,10 @@ let numberButtons = () => {
 
   zeroBtn.addEventListener("click", function () {
     displayLineBottom.textContent += 0;
+  });
+
+  decimalBtn.addEventListener("click", function () {
+    displayLineBottom.textContent += ".";
   });
 };
 numberButtons();
@@ -155,7 +159,6 @@ let operatorButtons = () => {
     operator = null;
   });
 };
-
 operatorButtons();
 
 const getResult = (operator, num1, num2) => {
