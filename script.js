@@ -116,39 +116,46 @@ numberButtons();
 let operatorButtons = () => {
   addBtn.addEventListener("click", function () {
     num1 = Number(displayLineBottom.textContent);
-    operator = add;
+    const selectedOperator = "+";
     displayLineTop.textContent = `${num1} + `;
     displayLineBottom.textContent = "";
+    operator = selectedOperator;
   });
 
   subtractBtn.addEventListener("click", function () {
     num1 = Number(displayLineBottom.textContent);
-    operator = subtract;
+    const selectedOperator = "-";
     displayLineTop.textContent = `${num1} − `;
     displayLineBottom.textContent = "";
+    operator = selectedOperator;
   });
 
   multiplyBtn.addEventListener("click", function () {
     num1 = Number(displayLineBottom.textContent);
-    operator = multiply;
+    const selectedOperator = "*";
     displayLineTop.textContent = `${num1} ᳵ `;
     displayLineBottom.textContent = "";
+    operator = selectedOperator;
   });
 
   divideBtn.addEventListener("click", function () {
     num1 = Number(displayLineBottom.textContent);
-    operator = divide;
+    const selectedOperator = "/";
     displayLineTop.textContent = `${num1} ÷ `;
     displayLineBottom.textContent = "";
+    operator = selectedOperator;
   });
 
   equalsBtn.addEventListener("click", function () {
     num2 = Number(displayLineBottom.textContent);
     displayLineTop.textContent = "";
-    displayLineBottom.textContent = num1;
-    operate(operator, num1, num2);
+    displayLineBottom.textContent = operate(operator, num1, num2);
+    num1 = null;
+    num2 = null;
+    operator = null;
   });
 };
+
 operatorButtons();
 
 const getResult = (operator, num1, num2) => {
