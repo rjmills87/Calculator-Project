@@ -70,47 +70,47 @@ const operate = (operator, num1, num2) => {
 
 let numberButtons = () => {
   oneBtn.addEventListener("click", function () {
-    displayLineTop.textContent += "1";
+    displayLineBottom.textContent += "1";
   });
 
   twoBtn.addEventListener("click", function () {
-    displayLineTop.textContent += 2;
+    displayLineBottom.textContent += 2;
   });
 
   threeBtn.addEventListener("click", function () {
-    displayLineTop.textContent += 3;
+    displayLineBottom.textContent += 3;
   });
 
   fourBtn.addEventListener("click", function () {
-    displayLineTop.textContent += 4;
+    displayLineBottom.textContent += 4;
   });
 
   fiveBtn.addEventListener("click", function () {
-    displayLineTop.textContent += 5;
+    displayLineBottom.textContent += 5;
   });
 
   sixBtn.addEventListener("click", function () {
-    displayLineTop.textContent += 6;
+    displayLineBottom.textContent += 6;
   });
 
   sevenBtn.addEventListener("click", function () {
-    displayLineTop.textContent += 7;
+    displayLineBottom.textContent += 7;
   });
 
   eightBtn.addEventListener("click", function () {
-    displayLineTop.textContent += 8;
+    displayLineBottom.textContent += 8;
   });
 
   nineBtn.addEventListener("click", function () {
-    displayLineTop.textContent += 9;
+    displayLineBottom.textContent += 9;
   });
 
   zeroBtn.addEventListener("click", function () {
-    displayLineTop.textContent += 0;
+    displayLineBottom.textContent += 0;
   });
 
   decimalBtn.addEventListener("click", function () {
-    displayLineTop.textContent += ".";
+    displayLineBottom.textContent += ".";
   });
 };
 numberButtons();
@@ -127,7 +127,7 @@ let operatorButtons = () => {
   });
 
   subtractBtn.addEventListener("click", function () {
-    num1 = Number(displayLineTop.textContent);
+    num1 = Number(displayLineBottom.textContent);
     const selectedOperator = "-";
     displayLineTop.textContent = `${num1} − `;
     displayLineBottom.textContent = "";
@@ -135,7 +135,7 @@ let operatorButtons = () => {
   });
 
   multiplyBtn.addEventListener("click", function () {
-    num1 = Number(displayLineTop.textContent);
+    num1 = Number(displayLineBottom.textContent);
     const selectedOperator = "*";
     displayLineTop.textContent = `${num1} ᳵ `;
     displayLineBottom.textContent = "";
@@ -143,7 +143,7 @@ let operatorButtons = () => {
   });
 
   divideBtn.addEventListener("click", function () {
-    num1 = Number(displayLineTop.textContent);
+    num1 = Number(displayLineBottom.textContent);
     const selectedOperator = "/";
     displayLineTop.textContent = `${num1} ÷ `;
     displayLineBottom.textContent = "";
