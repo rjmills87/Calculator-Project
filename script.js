@@ -127,7 +127,7 @@ let operatorButtons = () => {
   });
 
   subtractBtn.addEventListener("click", function () {
-    num1 = Number(displayLineBottom.textContent);
+    num1 = Number(displayLineTop.textContent);
     const selectedOperator = "-";
     displayLineTop.textContent = `${num1} − `;
     displayLineBottom.textContent = "";
@@ -135,7 +135,7 @@ let operatorButtons = () => {
   });
 
   multiplyBtn.addEventListener("click", function () {
-    num1 = Number(displayLineBottom.textContent);
+    num1 = Number(displayLineTop.textContent);
     const selectedOperator = "*";
     displayLineTop.textContent = `${num1} ᳵ `;
     displayLineBottom.textContent = "";
@@ -143,7 +143,7 @@ let operatorButtons = () => {
   });
 
   divideBtn.addEventListener("click", function () {
-    num1 = Number(displayLineBottom.textContent);
+    num1 = Number(displayLineTop.textContent);
     const selectedOperator = "/";
     displayLineTop.textContent = `${num1} ÷ `;
     displayLineBottom.textContent = "";
