@@ -70,47 +70,47 @@ const operate = (operator, num1, num2) => {
 
 let numberButtons = () => {
   oneBtn.addEventListener("click", function () {
-    displayLineBottom.textContent += "1";
+    displayLineTop.textContent += "1";
   });
 
   twoBtn.addEventListener("click", function () {
-    displayLineBottom.textContent += 2;
+    displayLineTop.textContent += 2;
   });
 
   threeBtn.addEventListener("click", function () {
-    displayLineBottom.textContent += 3;
+    displayLineTop.textContent += 3;
   });
 
   fourBtn.addEventListener("click", function () {
-    displayLineBottom.textContent += 4;
+    displayLineTop.textContent += 4;
   });
 
   fiveBtn.addEventListener("click", function () {
-    displayLineBottom.textContent += 5;
+    displayLineTop.textContent += 5;
   });
 
   sixBtn.addEventListener("click", function () {
-    displayLineBottom.textContent += 6;
+    displayLineTop.textContent += 6;
   });
 
   sevenBtn.addEventListener("click", function () {
-    displayLineBottom.textContent += 7;
+    displayLineTop.textContent += 7;
   });
 
   eightBtn.addEventListener("click", function () {
-    displayLineBottom.textContent += 8;
+    displayLineTop.textContent += 8;
   });
 
   nineBtn.addEventListener("click", function () {
-    displayLineBottom.textContent += 9;
+    displayLineTop.textContent += 9;
   });
 
   zeroBtn.addEventListener("click", function () {
-    displayLineBottom.textContent += 0;
+    displayLineTop.textContent += 0;
   });
 
   decimalBtn.addEventListener("click", function () {
-    displayLineBottom.textContent += ".";
+    displayLineTop.textContent += ".";
   });
 };
 numberButtons();
