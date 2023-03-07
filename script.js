@@ -152,7 +152,7 @@ let operatorButtons = () => {
 
   equalsBtn.addEventListener("click", function () {
     num2 = Number(displayLineBottom.textContent);
-    displayLineTop.textContent = `${num1}${operator}${num2}`;
+    displayLineTop.textContent = "";
     displayLineBottom.textContent = operate(operator, num1, num2);
     num1 = null;
     num2 = null;
